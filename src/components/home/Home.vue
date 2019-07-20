@@ -1,7 +1,8 @@
 <template>
   <div>
     <Header></Header>
-    <HomeSwiper></HomeSwiper>
+    <home-swiper></home-swiper>
+<home-icons></home-icons>
     <!-- <p style="font-size:6px">home</p>
     <router-link to="/list">List</router-link> -->
   </div>
@@ -10,9 +11,13 @@
 <script>
 import Header from './homeComponents/Header'
 import HomeSwiper from './homeComponents/Swiper'
+import HomeIcons from './homeComponents/Icons'
 export default {
   name: 'Home',
-  components:{Header, HomeSwiper},
+  components:{
+    Header, 
+    HomeSwiper,
+    HomeIcons},
   data () {
     return {
       msg: ''
