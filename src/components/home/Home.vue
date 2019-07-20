@@ -1,13 +1,17 @@
 <template>
   <div>
-    <h1>home</h1>
-    <router-link to="/list">List</router-link>
+    <Header></Header>
+    <div><span>111</span><a href="">2222</a></div>
+    <!-- <p style="font-size:6px">home</p>
+    <router-link to="/list">List</router-link> -->
   </div>
 </template>
 
 <script>
+import Header from './homeComponents/Header'
 export default {
   name: 'Home',
+  components:{Header},
   data () {
     return {
       msg: ''
