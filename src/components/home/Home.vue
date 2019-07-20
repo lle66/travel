@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header></Header>
-    <div><span>111</span><a href="">2222</a></div>
+    <HomeSwiper></HomeSwiper>
     <!-- <p style="font-size:6px">home</p>
     <router-link to="/list">List</router-link> -->
   </div>
@@ -9,9 +9,10 @@
 
 <script>
 import Header from './homeComponents/Header'
+import HomeSwiper from './homeComponents/Swiper'
 export default {
   name: 'Home',
-  components:{Header},
+  components:{Header, HomeSwiper},
   data () {
     return {
       msg: ''
